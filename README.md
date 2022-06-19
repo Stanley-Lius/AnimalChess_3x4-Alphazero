@@ -5,7 +5,9 @@
 專題名稱:以AlphaZero實作賽局遊戲AI 
 # 程式碼大略介紹  
 ## game.py
-定義動物將棋遊戲規則，棋盤大小為3*4，有[獅子](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece4.png)、[小雞](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece1.png)、[鹿](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece3.png)和[象](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece2.png)四種動物  
+定義動物將棋遊戲規則，棋盤大小為3*4，有[獅子](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece4.png)、[小雞](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece1.png)、[鹿](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece3.png)和[象](https://github.com/Stanley-Lius/AnimalChess_3x4-Alphazero/blob/main/piece2.png)四種動物所組成  
 小雞只能往前走；鹿可以往前後左右四個方向走；象則是可以往對角線方向走  
-獅子則是總和以上三種，八個方位都可以走，如同超連結所示  
-**此程式**主要是用來回傳現在的局勢以及可以下的棋子、可以下的點，還有判斷獅子是否被吃掉的終局條件
+獅子則是總和以上三種，八個方位都可以走，如同超連結中途圖片紅點所示  
+遊戲中有持駒規則，亦即如果我們吃掉了對方的棋子，在下個我方回合可以把它放到棋盤任意空格子，且會變為我方棋子
+遊戲***勝利條件***是將對手的獅子吃掉，或者下超過三百回合即算平手
+***此程式***主要是用來回傳現在的局勢以及可以下的棋子、可以下的點，還有判斷獅子是否被吃掉的終局條件
